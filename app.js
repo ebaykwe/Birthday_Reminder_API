@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import connectDB from './config/db.js';
-import userRoutes from './routes/userRoutes.js'; // Include the .js extension
+import userRoutes from './routes/userRoutes.js'; 
 import { sendBirthdayEmail } from './controllers/emailController.js';
 
 dotenv.config();
