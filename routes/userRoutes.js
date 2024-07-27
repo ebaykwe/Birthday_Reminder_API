@@ -1,11 +1,9 @@
-// userRoutes.js
 import express from 'express';
-import User from '../models/User.js'; // Make sure to include the .js extension
+import User from '../models/User.js'; 
 
 const router = express.Router();
 
-// Add a new user
-router.post('/add', async (req, res) => { // Changed from GET to POST as adding a user typically uses POST
+router.post('/add', async (req, res) => { 
   const { username, email, dateOfBirth } = req.body;
   try {
     const newUser = new User({ username, email, dateOfBirth });
@@ -16,4 +14,4 @@ router.post('/add', async (req, res) => { // Changed from GET to POST as adding 
   }
 });
 
-export default router; // Use export default instead of module.exports
+export default router; 
